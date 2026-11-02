@@ -58,6 +58,7 @@ public class Utilidades {
      * Ejemplo: " 5 " -> 5
      */
     public static int convertirCantidad(String texto) {
-        return Integer.parseInt(texto);
+        String texto_limpio = texto.trim();
+        return Integer.parseInt(texto_limpio);
     }
 }
