@@ -25,7 +25,7 @@ public class Carrito {
     public double calcularTotal() {
         double total = 0;
         for (LineaCarrito linea : lineas) {
-            total += linea.getProducto().getPrecio();
+            total +=  linea.getCantidad()* linea.getProducto().getPrecio();
         }
         return total;
     }
