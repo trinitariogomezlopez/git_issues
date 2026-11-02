@@ -45,6 +45,6 @@ public class Carrito {
      * Devuelve la última línea añadida al carrito.
      */
     public LineaCarrito getUltimaLinea() {
-        return lineas.get(lineas.size());
+        return lineas.get(lineas.size() - 1);
     }
 }
