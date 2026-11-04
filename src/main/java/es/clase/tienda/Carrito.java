@@ -34,11 +34,9 @@ public class Carrito {
      * Elimina del carrito todas las líneas del producto con ese nombre.
      */
     public void eliminar(String nombreProducto) {
-        for (LineaCarrito linea : lineas) {
-            if (linea.getProducto().getNombre().equals(nombreProducto)) {
-                lineas.remove(linea);
-            }
-        }
+        lineas.removeIf(linea ->
+                linea.getProducto().getNombre().equals(nombreProducto)
+        );
     }
 
     /**
