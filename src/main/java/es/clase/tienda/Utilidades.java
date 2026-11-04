@@ -43,9 +43,13 @@ public class Utilidades {
      * Ejemplo: {-5, -2, -9} -> -2
      */
     public static int maximo(int[] numeros) {
-        int max = 0;
+        int max = 0; int cont =0;
         for (int n : numeros) {
-            if (n > max) {
+
+            if (cont == 0){
+                cont++;
+                max = n;
+            }else if (n > max) {
                 max = n;
             }
         }
