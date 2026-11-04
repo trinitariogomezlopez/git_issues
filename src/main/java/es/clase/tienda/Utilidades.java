@@ -26,6 +26,7 @@ public class Utilidades {
         return alReves.equals(texto);
     }
 
+
     /**
      * Calcula el factorial de n.
      * Ejemplo: 5 -> 120
