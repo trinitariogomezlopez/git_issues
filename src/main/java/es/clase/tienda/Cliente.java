@@ -30,7 +30,7 @@ public class Cliente {
      * Un cliente sin email debe devolver false.
      */
     public boolean tieneEmailValido() {
-        return email.contains("@");
+        return email != null && email.contains("@");
     }
 
     @Override
