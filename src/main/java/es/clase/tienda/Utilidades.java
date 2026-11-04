@@ -33,8 +33,9 @@ public class Utilidades {
      */
     public static long factorial(int n) {
         long resultado = 1;
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             resultado *= i;
+
         }
         return resultado;
     }
